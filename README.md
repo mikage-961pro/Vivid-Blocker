@@ -2,7 +2,23 @@
 
 # Vivid Blocker
 ## App Store
-### Coming Soon.
+
+```
+You can test your build using the TestFlight App.
+```
+
+#### [Join TestFlight](https://testflight.apple.com/join/nF5Al43b) 
+
+
+EN:TestFlight supports apps for iOS, watchOS, tvOS, and iMessage. 
+Up to 100 apps can be tested at a time, internally or externally, and multiple builds can be tested simultaneously.
+Builds remain active for 90 days after upload.
+
+JP：TestFlightは、iOS、watchOS、tvOS、iMessage向けAppに対応しています。
+テスターが内部か外部かにかかわらず、一度にテストできるAppの数は最大100個で、複数のビルドを同時にテストすることができます。
+ビルドはアップロード後90日間有効です。
+
+
 ## How To Using a Safari Ad Blocker For iOS
 
 Settings> Safari> Content Blocker>[ Vivid Blocker ] Switch ON
