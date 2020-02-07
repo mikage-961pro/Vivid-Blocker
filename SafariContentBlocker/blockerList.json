@@ -1,0 +1,27 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "g123.jp"
+        }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "gamelistjp.com"
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "#home-icon"
+        },
+        "trigger": {
+            "url-filter": ".*"
+        }
+    }
+]

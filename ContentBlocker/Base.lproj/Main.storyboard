@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContentBlocker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vivid Blocker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZ9-vd-Mpe">
+                                <rect key="frame" x="123" y="431.5" width="168" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" red="0.11452049760000001" green="0.2332459986" blue="0.46166402099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nky-Le-hjV">
+                                <rect key="frame" x="160" y="489" width="94" height="46"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                <state key="normal" title="Reload">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="reloadContentBlockerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MGS-Cz-Fl4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ビビッドアーミーの広告及びゲームを" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoG-c8-qth">
+                                <rect key="frame" x="57" y="543" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="yGD-UE-LAs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="表示されないようにした。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtH-dV-Ie0">
+                                <rect key="frame" x="139.5" y="573" width="135" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="crz-1w-TEC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="設定＞Safari＞コンテンツブロッカーからこのアプリを許可してください。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIv-oO-20k">
+                                <rect key="frame" x="76" y="623" width="267" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="L84-Ud-GxU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4158246417739726" green="0.84679212017671235" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QIv-oO-20k" firstAttribute="top" secondItem="Nky-Le-hjV" secondAttribute="bottom" constant="88" id="0dp-8v-hjq"/>
+                            <constraint firstItem="Nky-Le-hjV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="33j-YG-dK7"/>
+                            <constraint firstItem="hZ9-vd-Mpe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Wr-so-6qb"/>
+                            <constraint firstItem="VoG-c8-qth" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="4nY-bl-tRU"/>
+                            <constraint firstItem="hZ9-vd-Mpe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6ho-gg-1jR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QIv-oO-20k" secondAttribute="trailing" constant="71" id="GdO-gq-W7S"/>
+                            <constraint firstItem="QIv-oO-20k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="Gms-JF-atN"/>
+                            <constraint firstItem="MtH-dV-Ie0" firstAttribute="top" secondItem="Nky-Le-hjV" secondAttribute="bottom" constant="38" id="JAV-oD-692"/>
+                            <constraint firstItem="VoG-c8-qth" firstAttribute="top" secondItem="Nky-Le-hjV" secondAttribute="bottom" constant="8" id="OKg-zl-Uk0"/>
+                            <constraint firstItem="Nky-Le-hjV" firstAttribute="top" secondItem="hZ9-vd-Mpe" secondAttribute="bottom" constant="24.5" id="jXj-AC-KsL"/>
+                            <constraint firstItem="MtH-dV-Ie0" firstAttribute="centerX" secondItem="Nky-Le-hjV" secondAttribute="centerX" id="nfN-Zt-bLk"/>
+                            <constraint firstItem="VoG-c8-qth" firstAttribute="centerX" secondItem="MtH-dV-Ie0" secondAttribute="centerX" id="wPZ-yA-40i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
